@@ -1,0 +1,23 @@
+main{
+    flex: 1;
+}
+h1{
+    font-size: 24px;
+}
+
+p{
+text-align: left;
+}
+.clubcontainer{
+    display: flex;
+    justify-content: center;
+align-items: center;
+}
+
+.club{
+max-width: 450px;
+}
+
+.clubimg{
+    max-width: 300px;
+}
