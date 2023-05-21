@@ -11,6 +11,7 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 flex-wrap: wrap; 
+padding-bottom: 20px;
  
 }
 
@@ -23,7 +24,16 @@ flex-wrap: wrap;
 
 body { 
     margin: 0; 
-    font-family: "inter", Arial, Helvetica, sans-serif;   
+    font-family: "inter", Arial, Helvetica, sans-serif; 
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 0; 
+}
+
+main {
+ align-items: center;
+ justify-content: center;
 }
 
 nav {
@@ -59,8 +69,9 @@ color: black;
     height: 400px; 
     display: flex; 
     justify-content: center; 
-    align-items: center; 
+    align-items: flex-start; 
     overflow: hidden; 
+    margin-top: 40px;
    
   }
   
@@ -69,10 +80,11 @@ color: black;
     max-height: 100%; 
     object-fit: cover;
     border: 2px solid #000000;
-   
-  }
+   }
 
  h1{ 
+    font-size: 24px;
+  padding: 50px;
   font-weight: 70;
   display: flex;
   justify-content: center;
@@ -84,10 +96,33 @@ footer {
 }
 .hamburger{
     padding: 20px;
+    color: #000000;
 }
 
 #menu-checkbox{
     display: none;
+  }
+
+  .aboutcontainer{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-height: 100%;
+    max-width: 500px;
+    background-color: #D9D9D9;
+    display: flex;
+    
+  
+
+  }
+
+  .aboutimg{
+ padding-top: 30px;
+object-fit: cover;
+max-height: 800px;
+justify-content: center;
+
   }
 
   @media screen and (max-width: 630px){
@@ -110,6 +145,24 @@ footer {
     .hamburger{
         display: none;
     }
+    
+      
+}
+
+@media screen and (max-width: 630px){
+    
+    
+        .aboutcontainer {
+          flex-direction: column; 
+          max-width: 311px;
+          justify-content: center;
+        }
+      
+        .aboutimg {
+          float: none; 
+          padding-right: 0; 
+          margin-bottom: 10px; 
+        }
 }
 
 @media screen and (max-width: 440px){
@@ -123,4 +176,8 @@ footer {
 
 @media only screen and (max-width: 1000px) {}
 
-@media only screen and (max-width: 1155px) {}
+@media only screen and (max-width: 1155px) {
+    h1 {
+        font-size: 20px;
+    }
+}
